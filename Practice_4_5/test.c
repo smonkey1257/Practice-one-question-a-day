@@ -41,6 +41,8 @@ int numberOfSteps(int num) {
 //解法二：位运算
 int numberOfSteps(int num) {
     int i;
+    if (num == 0)
+        return 0;
     for (i = 0; num; num >>= 1) {
         if (num & 1)//减一再除二，相当于两步
             i += 2;
