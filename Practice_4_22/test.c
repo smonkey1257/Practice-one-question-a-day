@@ -59,10 +59,12 @@ int main(void)
             QueuePush(&new, QueueFront(&even));
             QueuePop(&even);
         }
+        //奇数队列为空
         if (QueueEmpty(&odd))
         {
             new.tail->next = even.head;
         }
+        //偶数对列为空
         if (QueueEmpty(&even))
         {
             new.tail->next = odd.head;
