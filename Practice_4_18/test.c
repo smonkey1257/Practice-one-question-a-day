@@ -86,18 +86,12 @@ int main(void)
 	int count = 0;
 	for (int i = 1; i <= 100; i++)
 	{
-		//个位是9
+		个位是9
 		if (i % 10 == 9)
 			count++;
-		//十位是9
-		else if (i / 10 == 9)
+		十位是9
+		if (i / 10 == 9)
 			count++;
-		//99是特例
-		else if (i == 99)
-		{
-			count += 2;
-			break;
-		}
 	}
 	printf("出现9的个数为%d\n", count);
 	return 0;
